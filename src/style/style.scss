@@ -1,0 +1,140 @@
+.app {
+  padding: 0 10px;
+
+  .header {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: lightyellow;
+    font-size: 20px;
+
+    nav {
+      position: absolute;
+      top: 30%;
+
+      li {
+        display: inline-block;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .content {
+    margin-bottom: 20px;
+    min-height: 500px;
+
+    .home {
+      .label-value {
+        display: table;
+        width: 45%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+
+        .lv-label {
+          display: table-cell;
+          width: 30%;
+          margin-right: 5%;
+        }
+
+        .lv-value {
+          display: table-cell;
+          width: 60%;
+          font-weight: 900;
+          word-break: break-all;
+        }
+      }
+
+      .contacts-map {
+        height: 500px;
+        width: 80%;
+
+        .map-marker {
+          font-size: 10px;
+          font-weight: bolder;
+          color: red;
+        }
+      }
+    }
+
+    .contacts {
+      .table-list {
+        width: 90%;
+      }
+
+      .page-numbers {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 15px;
+
+        .page-number {
+          margin-right: 10px;
+          text-decoration: underline;
+          font-size: 20px;
+          cursor: pointer;
+
+          &.active {
+            text-decoration: unset;
+            cursor: default;
+          }
+        }
+      }
+    }
+
+    .search {
+      input {
+        width: 50%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .footer {
+    height: 50px;
+    width: 100%;
+    border: 1px solid grey;
+    position: relative;
+    background-color: lightyellow;
+    color: maroon;
+
+    label {
+      position: absolute;
+      font-size: 16px;
+      font-weight: bold;
+      top: 30%;
+      left: 40%;
+    }
+  }
+}
+
+.row {
+  margin-bottom: 5px;
+
+  &.row-header {
+    background-color: lightgray;
+    font-weight: bold;
+    height: 40px;
+  }
+  &.data {
+    height: 100px;
+  }
+}
+
+.col {
+  display: inline-block;
+  height: 100%;
+  width: 18%;
+  padding: 0 auto;
+  vertical-align: middle;
+  line-height: 40px;
+  padding-left: 5px;
+
+  .google-map {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.error {
+  color: red;
+}
